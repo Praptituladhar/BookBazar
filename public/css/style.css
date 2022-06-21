@@ -1,0 +1,75 @@
+*{
+    overflow-x: hidden;
+}
+/* .homepic {
+    position: relative;
+}
+
+.text-block {
+    margin-bottom: 15%;
+    position: absolute; 
+    text-align: center;
+    bottom:0;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.1); 
+    color: #000; 
+    width: auto;
+    padding: 20px; 
+} */
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+.showbook{
+    display: flex;
+
+}
+.book{
+    margin-right: 20px;
+    padding-top: 10px;
+    position: relative;
+    z-index:1;
+    background-color: whitesmoke;
+}
+.book:hover{
+    transition: all .4s ease-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.icon{
+    position: absolute;
+    z-index: 2;
+    background: white;
+    width: 25px;
+    top:-1px;        
+    height: 25px;
+    opacity: 1;
+}
+.icon:hover{
+    border: 1px solid black;
+}
+.hovertext{
+    position: absolute;
+    z-index: 2;
+    font-size: smaller;
+    background: rgb(247, 247, 236);
+    left: 28px;
+    top:1px;  
+    padding:0 5px;
+    border: 1px solid black; 
+    border-radius: 20px;     
+    opacity: 1;
+    display: none;
+    
+}
+.icondiv:hover + .hovertext {
+    display: block;
+}
+
+footer {
+    background-color: rgb(254,208,8);
+}
+
