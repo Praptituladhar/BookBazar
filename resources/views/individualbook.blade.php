@@ -70,6 +70,12 @@
         </div>
     </div> 
     <hr>  
+
+    <div class="container-fluid">
+    <p style="font-size:25px; margin-bottom:0">Our Collections</p><hr style="margin-top: 0;">
+    @include('playcards')
+  
+  </div>
 </main>
  
  @endsection
