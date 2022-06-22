@@ -9,5 +9,5 @@ After cloning the project run the following commands:
 6. php artisan serve
 
 For Dashboard login
-Email: admin@admin.com
+Email: prapti@prapti.com
 Password: 12345
