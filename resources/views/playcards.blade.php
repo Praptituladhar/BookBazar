@@ -1,4 +1,4 @@
-<div class="playcard" style="position: relative; overflow: hidden; width: auto; height: calc(8rem + 195px);">	
+<div class="playcard p-5" style="position: relative; overflow: hidden; width: auto; height: calc(8rem + 195px);">	
     <div style="position: absolute; inset: 0px; overflow: scroll; margin-right: -17px; margin-bottom: -17px;">
         <div class="showbook" style="width: 4080px;">
           
@@ -14,10 +14,10 @@
         <a href="#" aria-current="false">
           <div class=" ">
               <div class="bookimg" style="height: calc(3.5rem + 150px);overflow: hidden; border-radius: 2%;">
-                  <img src="img/homepic.jpg" alt="" style="height: 100%;width: 170px;">
+                  <img src="/img/pic.jpg" alt="" style="height: 100%;width: 170px;">
               </div>
               <hr style="margin-bottom: 1px;">
-              <div>
+              <div class="text-center">
                   <div><strong>Book name</strong> </div>
                   <div> author </div>
                   <div class="mb-1"> price </div>
