@@ -39,7 +39,7 @@ Route::group(['middleware' => 'auth'], function () {
 // backend starts
 // Add Items
 Route::get('/add_item',[AdditemController::class, 'add_item_form']);
-Route::post('/postaddbook',[AdditemController::class, 'poastaddbook']);
+Route::post('/postaddbook',[AdditemController::class, 'postaddbook']);
 // add category
 Route::get('/add_category',[AdditemController::class, 'add_category_form']);
 Route::post('/postaddcategory',[AdditemController::class, 'postaddcategory']);

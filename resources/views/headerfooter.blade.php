@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,7 +15,7 @@
       <header>
         <div class="row navbar">       
           <div  class=" logo  col-2">
-              <a href="/"><img src="img/logo.png" alt="logo" height="50px" width="100px"> </a>
+              <a href="/"><img src="/img/pic.jpg" alt="logo" height="50px" width="100px"> </a>
           </div>        
           <div class=" col-9 active-purple-3 active-purple-4 ">
               <form class="form-inline mx-auto my-2 my-lg-0" >
@@ -24,32 +24,35 @@
                 </form>
           </div>
           <div class="col-1  text-center">
-            <div class="bg-light p-3 rounded-circle" style="width: 60px; ">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-              </svg>
-          </div>
+            <div class="p-3" style="width: 60px; ">
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3 text-dark" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                <span class="cartinc badge badge-pill badge-dark text-white bg-dark" style="border-radius:10px; transform:translate(15px, -38px);" >0</span>
+              </a>
+            </div>
           </div>
        </div>
     
         <div >
-          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(254,208,8);">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #bdf994;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class=" navbar-collapse " id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link lead" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Textbooks</a>
+                  <a class="nav-link lead" href="#">Textbooks</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Children's Books</a>
+                    <a class="nav-link lead" href="#">Children's Books</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Novels</a>
+                  <a class="nav-link lead" href="#">Novels</a>
                 </li>
               </ul>
             </div>
@@ -57,34 +60,34 @@
         </div>
       </header>
 
-
+@yield('content')
      
 
 
       <!--Footer-->
-      <footer style="margin-top:10px;">
-        <div class="justify-content-center my-3 pr-3 pl-3" style="background-color: rgb(254,208,8);">
+      <footer style="margin-top:10px; background-color: #d39c9c;">
+        <div class="justify-content-center my-3 pr-3 pl-3" style="background-color: #d2a0a0;">
           <div class="row ">
              <div class="col-md-6">
                <!--About Us-->
                <div class="row">
-                <div class="col">
+                <div class="col text-white">
                   <p style="font-size:25px; margin-bottom:0"><b>About Us</b></p> <hr style="margin-top: 0;">
-                  <p style="font-size:12px; font-weight: bold; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p style="font-size:16px; text-align: justify;" class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               
                 </div>
                 </div>
               <div class="row" >
-                <div class="col-6 text-start">
+                <div class="col-6 text-start text-white">
                   <p style="font-size:25px; margin-bottom:0"><b>Guidelines</b></p><hr style="margin-top: 0;">
-                  <ul class="list-unstyled" style="font-size: 12px; font-weight: bold;">
-                    <li><a href="#">Issues</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
+                  <ul class="list-unstyled lead" style="font-size: 16px;">
+                    <li><a href="#" class=" text-white ">Issues</a></li>
+                    <li><a href="#" class=" text-white ">Privacy Policy</a></li>
+                    <li><a href="#" class=" text-white ">Terms and Conditions</a></li>
                   </ul>
                 </div>
                 <!--Social Media-->
-                <div class="col-6 text-start">
+                <div class="col-6 text-start text-white">
                   <p style="font-size:25px; margin-bottom:0; "><b>Follow us</b></p><hr style="margin-top: 0;">
                   <!--Facebook-->
         
@@ -109,13 +112,13 @@
               <div class="row">
                 <!-- <p style="font-size:15px; margin-bottom:0; "><b>Scan to download the app version</b></p><hr style="margin-top: 0;"> -->
                 <div class="col">
-                 <img src="img/homepic.jpg" alt="QR Code" width="150px" height="150px" style="border-radius:5%">
+                 <img src="/img/homepic.jpg" alt="QR Code" width="150px" height="150px" style="border-radius:5%">
                 </div>
 
               </div>
               <div class="row mt-5">
-                  <button class="mr-5" disabled="disabled">get in playstore</button>
-                  <button disabled="disabled">fet in appstore</button>
+                  <button class="mr-5 text-white" disabled="disabled">get in playstore</button>
+                  <button disabled="disabled text-white">get in appstore</button>
                 </div>
               </div>
             </div>
@@ -123,7 +126,7 @@
           </div>
           </div>
             <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1);">
+        <div class="text-center p-3" style="background-color: #d2a0a0;">
             © 2022 Copyright:
         <a class="text-dark" href="#">bookbazaar.com</a>
       </div>

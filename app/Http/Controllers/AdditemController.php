@@ -16,15 +16,15 @@ class AdditemController extends Controller
         $category = DB::table('category')->select('category')->get();
         return view ('add_item', ['category'=>$category]);
     }
-    public function postaddbook(Request $req)
+    public function postaddbook(Request $request)
     {
         $request->validate([
             'bookName'=>'required',
             'author'=>'required',
-            'isbn'=>'required|number',
+            'isbn'=>'required|integer',
             'description'=>'required',
             'filepath'=>'required',
-            'price'=>'required|number',
+            'price'=>'required|integer',
             'condition'=>'required'
         ]);
         $query = DB::table('book')->insert([
@@ -33,7 +33,7 @@ class AdditemController extends Controller
             'isbn'=>$request->input('isbn'),
             'description'=>$request->input('description'),
             'image'=>$request->input('filepath'),
-            'price'=>$request->input('prie'),
+            'price'=>$request->input('price'),
             'condition'=>$request->input('condition')
         ]);
         if($query)
@@ -54,10 +54,10 @@ class AdditemController extends Controller
         $request->validate([
             'category'=>'required'
         ]);
-        $query = DB::table('category'->insert(['category'=>$request->input('category')]));
+        $query = DB::table('category')->insert(['category'=>$request->input('category')]);
         if($query)
         {
-            return redirect('/add_item')->back()->with('success', 'Your book category has been added');   
+            return redirect('/add_item')->with('success', 'Your book category has been added');   
         }
         else
         {

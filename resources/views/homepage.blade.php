@@ -1,9 +1,8 @@
 @extends('headerfooter')
 @section('content')
-<section>
-      
+<main class="">
   <div class="homepic mb-5">
-    <img src="img/homepic.jpg" alt="homepic" width="100%" height="500px">
+    <img src="/img/pic.jpg" alt="homepic" width="100%" height="500px">
     <!-- <div class="text-block">
       <p style="font-size:40px;">Where Book Comes to you</p>
       
@@ -14,10 +13,5 @@
     @include('playcards')
   
   </div>
-</section>
-
-
-
-      
-
+</main>
 @endsection

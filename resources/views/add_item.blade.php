@@ -40,7 +40,6 @@
                     <option value="{{$categories->category}}">{{ $categories->category }}</option>
                     @endforeach
                   </select>
-                    
                       @if ($errors->has('category'))
                         <span class="text-danger">{{ $errors->first('category') }}</span>
                       @endif
@@ -108,7 +107,7 @@
                   <div class="form-group row">
                     <label  class="col-sm-2 col-form-label">Condition</label>
                     <div class="col-md-8">
-                    <select class="form-select form-control" aria-label="Default select example" name="Condition">
+                    <select class="form-select form-control" aria-label="Default select example" name="condition">
                       <option selected>Select condition of your book</option>
                       <option value="verygood">Very Good</option>
                       <option value="good">Good</option>
