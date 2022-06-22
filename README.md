@@ -8,6 +8,4 @@ After cloning the project run the following commands:
 5. php artisan key:generate
 6. php artisan serve
 
-For Dashboard login
-Email: prapti@prapti.com
-Password: 12345678
+
