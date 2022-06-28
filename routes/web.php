@@ -43,6 +43,10 @@ Route::post('/postaddbook',[AdditemController::class, 'postaddbook']);
 // add category
 Route::get('/add_category',[AdditemController::class, 'add_category_form']);
 Route::post('/postaddcategory',[AdditemController::class, 'postaddcategory']);
-
 // backend ends
-Route::get('/homepage',[HomepageController::class, 'display'] );
+
+// frontend
+Route::get('/homepage',[HomepageController::class, 'display']);
+Route::post('/search', [HomepageController::class, 'search'])->name('search');
+Route::post('/playcard', [HomepageController::Class, 'playcard']);
+Route::post('/policy', [HomepageController::class, 'policy']);
