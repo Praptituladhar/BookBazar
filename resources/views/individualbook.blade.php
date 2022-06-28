@@ -1,12 +1,10 @@
-@extends('headerfooter')
-@section('content')
-<main>
+
     <div class="container individualbook">
         <div class="row">
             <div class="col-3">
                 <div class="image text-center"> <img src="img/homepic.jpg" alt="book name" height="250px" width="100%"></div><br>
                 <div class="price text-center"><strong>Price</strong></div>
-                <div class="addtocart text-center "><button class="btn bg-warning mt-1" type="submit" style="width: 100%"><strong>Add to Cart</strong></button></div>
+                <div class="addtocart text-center "><button class="btn mt-1" type="submit"  style="background-color: rgb(200, 249, 167);width: 100%;"><strong>Add to Cart</strong></button></div>
             </div>
             <div class="col-6 pl-4" style="border-right: 1px solid black">
                 <div class="booktitle"><h5><strong>Book title</strong></h5></div>
@@ -68,14 +66,11 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <hr>  
 
     <div class="container-fluid">
-    <p style="font-size:25px; margin-bottom:0">Our Collections</p><hr style="margin-top: 0;">
-    @include('playcards')
+        <p style="font-size:25px; margin-bottom:0">Our Collections</p><hr style="margin-top: 0;">
   
-  </div>
-</main>
- 
- @endsection
+       @include('playards')
+    </div>     
