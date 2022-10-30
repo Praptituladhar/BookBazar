@@ -1,0 +1,46 @@
+/* navigation bar */
+.navbar .navbar-fixed-top>.list .list-inline>li>a:hover, 
+.navbar .navbar-fixed-top>.list .list-inline>li>a:focus,
+.navbar .navbar-fixed-top>.list .list-inline>li>a:active {
+    color: gray;
+}
+
+/* magnifier */
+.img-magnifier-container {
+  position:relative;
+}
+/* cart hover */
+.cart {
+  position:relative;
+}
+.cart:hover .righticon{
+  opacity:1;
+  
+}
+.righticon {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top:20px;
+  right:60px;
+  background-color: white;
+  padding: 2%;
+  box-shadow: 0 0 50px #ccc;
+}
+.righticon:hover {
+  background-color: gray;
+}
+
+/* delete button in checkout page */
+#button {
+  width:25px;
+  background-color: aqua;
+}
+/* button in header */
+.btnstyle {
+  border:0px;
+  background-color: white;
+}
+/* .divcross {
+  display: none;
+} */
