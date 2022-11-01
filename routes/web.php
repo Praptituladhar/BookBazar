@@ -53,6 +53,8 @@ Route::get('remove/{id}', [AuthController::class,'removefromCart']);
 Route::post('/postcheckout', [AuthController::class,'postcheckout']);
 Route::get('removecart/{id}', [CartController::class,'removeCart']);
 Route::get('/policy', [AuthController::class,'privacy_policy']); 
+Route::get('/terms', [AuthController::class,'terms']); 
+Route::get('/help_support', [AuthController::class,'help_support']); 
 Route::get('/payment-verify', [AuthController::class,'verify']);
 Route::get('/success', [AuthController::class,'success']);
 Route::get('/fail', [AuthController::class,'fail']);

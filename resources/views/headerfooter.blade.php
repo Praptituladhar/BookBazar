@@ -136,9 +136,9 @@
                 <div class="col-6 text-start">
                   <p style="font-size:25px; margin-bottom:0"><b>Guidelines</b></p><hr style="margin-top: 0;">
                   <ul class="list-unstyled text-dark" style="font-size: 12px; font-weight: bold;">
-                    <li><a href="#" class="text-dark text-decoration-none">Issues</a></li>
+                    <li><a href="/help_support" class="text-dark text-decoration-none">Help and Support</a></li>
                     <li><a href="/policy" class="text-dark text-decoration-none">Privacy Policy</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none">Terms and Conditions</a></li>
+                    <li><a href="/terms" class="text-dark text-decoration-none">Terms and Conditions</a></li>
                   </ul>
                 </div>
                 <!--Social Media-->

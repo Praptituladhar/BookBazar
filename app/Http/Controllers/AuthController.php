@@ -139,7 +139,12 @@ class AuthController extends Controller
     public function privacy_policy(){
         return view('privacy_policy');
     }
-
+    public function terms(){
+        return view('terms_conditions');
+    }
+    public function help_support(){
+        return view('help_support');
+    }
     public function verify(Request $request)
     {
         $status = $request->q;
