@@ -58,3 +58,19 @@ Route::get('/help_support', [AuthController::class,'help_support']);
 Route::get('/payment-verify', [AuthController::class,'verify']);
 Route::get('/success', [AuthController::class,'success']);
 Route::get('/fail', [AuthController::class,'fail']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

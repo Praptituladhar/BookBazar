@@ -117,6 +117,9 @@ class AuthController extends Controller
         $mobile = $request->input('mobile');
         $address = $request->input('address');
         $city = $request->input('city');
+        $data=array('name'=>$name,"email"=>$email,"mobile"=>$mobile,"address"=>$address, "city"=>$city);
+        // dd($data);
+        DB::table('checkouts')->insert($data);
         return redirect('https://uat.esewa.com.np/epay#/');
     }
     function removefromCart($id) {

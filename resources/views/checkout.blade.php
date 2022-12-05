@@ -15,8 +15,8 @@
             </ul>
         </div>
     <!-- row and column for checkout and cart -->
-    <!-- <form action="/postcheckout" method="POST" enctype="multipart/form-data" class="form-inline"> -->
-    <!-- @csrf -->
+    <form action="/postcheckout" method="POST" enctype="multipart/form-data" class="form-inline">
+    @csrf
         <div class="row">
             <div class="col-md-8">
                 <div class="bg-dark text-white p-2"><h5>CHECKOUT METHOD</h5></div>
@@ -106,13 +106,18 @@
                                 <input value="890y-0984-dujs6700" name="pid" type="hidden">
                                 <input value="http://localhost:8000/payment-verify?q=su" type="hidden" name="su">
                                 <input value="http://localhost:8000/payment-verify?q=fu" type="hidden" name="fu">
-                                <a href="/remove/{{ $item->cart_id }}"><input value="Proceed" type="submit" class="btn btn-success"></a>
+                                <!-- <a href="/postcheckout"> -->
+                                    <a href="/remove/{{ $item->cart_id }}">
+                                        <input value="Proceed" type="submit" class="btn btn-success">
+                                    </a>
+                                <!-- </a> -->
                             </form>
                         </div>
                     </div>
                 </div>
                
             </div>
+            </form>
         </div>
 </div>
 @endsection

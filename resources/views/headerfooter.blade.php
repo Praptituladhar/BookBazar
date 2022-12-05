@@ -128,7 +128,8 @@
                <div class="row">
                 <div class="col">
                   <p style="font-size:25px; margin-bottom:0"><b>About Us</b></p> <hr style="margin-top: 0;">
-                  <p style="font-size:12px; font-weight: bold; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p style="font-size:12px; font-weight: bold; text-align: justify;">Bookbazaar an online book thrift store. To all those who enjoy reading a lot. We provide you a platform to purchase book at reasonable price. We assist students and many other readers in
+buying and selling used books.<br> We believe in Reduce, Reuse and Recycle</p>
               
                 </div>
                 </div>
